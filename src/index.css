@@ -124,6 +124,12 @@ margin: 0 auto;
   .image-type-container {flex-direction: column;}
 }
 
+@media (max-width:450px) {
+  .poke-image {
+    height: 350px;
+    width: 325px;}
+}
+
 @media (min-width: 200px) {
   .move-list { grid-template-columns: repeat(2, 1fr); }
 }

@@ -31,15 +31,9 @@ function App() {
 
     const result = await fetchPokemon(searchTerm);
 
-    console.log(result.request.status);
-
-    // return here for error component//
-
     if (result.request.status === 404) {
       setError(true);
       setIsLoading(false);
-
-      console.log(error, 'after error status');
     } else {
       setError(false);
       setPokemon(result.data);

@@ -10,8 +10,4 @@ const fetchPokemon = async (searchTerm) => {
   return response;
 };
 
-// .then((res) => {
-//   return res.data;
-// })
-
 export default fetchPokemon;
