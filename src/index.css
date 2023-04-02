@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.poke-image{
+  height: 400px;
+  width: 400px;
+  filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.35));
+}
+
+.pokemon-container{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  border-radius: 0.25rem;
+  color:#4a4a4a;
+  margin-top: 2rem;
+  box-shadow:-0.125em 0.5em 3em -0.125em rgba(10, 10, 10, 0.4), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.image-type-container  {
+  display: flex;
+}
+
+.type-text {
+  color: white;
+  padding: 0px 5px 0px 5px;
+  margin-right: .5rem;
+  border-radius:5px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 2px solid grey;
+}
+
+.media-content {
+  display: flex;
+  align-items: center;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.move-list {
+display: grid;
+max-width: 1200px;
+
+grid-column-gap: 10px;
+grid-row-gap: 2px;
+font-weight: 500;
+
+border-width: 2px;
+border-style: solid;
+border-radius: 3px; 
+
+margin: 0 auto;
+}
+
+.moves {
+  list-style-type: none;
+  padding: .5rem;
+  background-color: ghostwhite;
+  /* margin-right: 5px; */
+}
+
+.box.search-box  {
+  border-radius: 0.25rem;
+  color:#4a4a4a;
+  box-shadow:0 0.5em 3em -0.125em rgba(10, 10, 10, 0.4), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.error-title {
+  font-size: 2.5rem;
+}
+
+.box.error-box {
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  color:#4a4a4a;
+  box-shadow:-0.125em 0.5em 3em -0.125em rgba(10, 10, 10, 0.4), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+@media (max-width: 700px) {
+  .image-type-container {flex-direction: column;}
+}
+
+@media (min-width: 200px) {
+  .move-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 400px) {
+  .move-list { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 700px) {
+  .move-list { grid-template-columns: repeat(6, 1fr); }
+}
+@media (min-width: 900px) {
+  .move-list { grid-template-columns: repeat(8, 1fr); }
+}
+
