@@ -9,8 +9,10 @@ function PokeSearch({ onSubmit, loading }) {
 
   const onHandleSubmit = (event) => {
     event.preventDefault();
-    onSubmit(searchTerm.toLowerCase());
-    setSearchTerm('');
+    if (event.target[0].value.length !== 0) {
+      onSubmit(searchTerm.toLowerCase());
+      setSearchTerm('');
+    }
   };
 
   return (
@@ -28,7 +30,7 @@ function PokeSearch({ onSubmit, loading }) {
             className="input is-medium"
             value={searchTerm}
             type="text"
-            placeholder="Medium input"
+            placeholder="Pokemon name or number..."
           />
           <button className="button is-medium is-responsive is-link">
             Search

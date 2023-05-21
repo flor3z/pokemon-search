@@ -8,11 +8,13 @@ html {
   font-size: 62.5%;
 }
 
-
-
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.button{
+  margin-top: .5rem;
 }
 
 .poke-image{

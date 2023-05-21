@@ -95,7 +95,6 @@ function PokeDisplay({ pokemon }) {
               );
             })}
           </div>
-          <br />
         </div>
       </div>
     </div>
